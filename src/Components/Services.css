@@ -1,0 +1,60 @@
+.services{
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+.servicesCard{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 0.4rem;
+    padding: 2rem;
+    background-color: #F1F1F1;
+}
+.servicesCard img{
+    width: 15%;
+}
+.servicesCardContent .serviceName{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.servicesCardContent .serviceDesc{
+    font-size: 1rem;
+    line-height: 1.6rem;
+    padding: 0.5rem 0;
+}
+.serviceReadme{
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.serviceReadme span{
+    background-color: rgb(209, 204, 204);
+    border-radius: 100%;
+    font-size: 0.9rem;
+    font-weight: 900;
+    color: white;
+    padding: 1.5px 3px;
+}
+.serviceReadme span:hover{
+    background-color: var(--Primary02);
+}
+@media screen and (max-width:780px) {
+    .services{
+        margin: 2rem auto;
+        grid-template-columns:1fr;
+        gap: 2rem;
+    }
+    .servicesCard{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        gap: 0.4rem;
+        padding: 2rem;
+        background-color: #F1F1F1;
+    }
+}

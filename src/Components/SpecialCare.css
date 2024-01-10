@@ -1,0 +1,37 @@
+.SpeacialCare{
+    width: 70%;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.SpecialCareDiv1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+.SpeacialCareName{
+    font-size: 1rem;
+    border: 1px solid rgb(210, 205, 205);
+    letter-spacing: 0.5rem;
+    width: 50%;
+    text-align: center;
+} 
+.SpeacialCareHeading{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.SpecialCareSubHeading{
+    font-size: 1.1rem;
+}
+.SpecialCareBadges{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    gap: 0.5rem;
+}
+.SpecialCareImage{
+    width: 50%;
+}

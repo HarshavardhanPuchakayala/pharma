@@ -1,0 +1,129 @@
+/* NavBar one */
+.NavOneHeader{
+    background-color:var(--Primary01);
+    color: white;
+    padding: 1rem 0;
+}
+.NavOne{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.NavOne h6{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.NavOneContact{
+    display: flex;
+    gap: 4rem;
+}
+.Number{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.Number span{
+    background-color: #2478d1;
+    padding: 0.4rem 0.6rem;
+    border-radius: 100%;
+}
+/*NavTwo*/
+.NavTwoHeader{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+.NavTwoHeader label{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.NavTwoHeader img{
+    width: 80%;
+    height: 10dvh;
+}
+.NavItems{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.NavItems li{
+    font-size: 1.1rem;
+    font-weight: 400;
+    position: relative;
+    cursor: pointer;
+}
+.NavItems li:last-child{
+    display: none;
+}
+.NavItems li::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 4px;
+    background-color: var(--Primary01);
+    bottom: -0.6rem;
+    right: 0;
+}
+.NavItems li:hover:after{
+    width: 100%;
+    transition: all 0.7s cubic-bezier(0.3,0,0.3,1);
+}
+.AppointmentBtn{
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    background-color: var(--Primary02);
+}
+@media screen and (min-width:10px) and (max-width:800px) {
+    .NavOneHeader{
+        display: none;
+    } 
+    /*NavTwo*/
+.NavTwoHeader{
+    width: 90%;
+}
+.NavTwoHeader label{
+    gap: 0.2rem;
+}
+.NavTwoHeader label h1{
+    font-size: 1.2rem;
+}
+.NavTwoHeader img{
+    width: 50%;
+    height: 7dvh;
+}
+.NavMenu{
+        position: absolute;
+        top: 11%;
+        left: 0;
+        width: 100%;
+        margin: 0 auto;
+        background-color: white;
+        padding: 2rem  0;
+    }
+    .NavItems{
+        flex-direction: column;
+    }
+    .NavItems li{
+        font-size: 1.2rem;
+    }
+    .NavItems li:last-child{
+        display: flex;
+        margin: 0 auto;
+        padding: 0.8rem 30%;
+        font-size: 1rem;
+        font-weight: 600;
+        border: none;
+        background-color: var(--Primary02);
+    }
+.AppointmentBtn{
+   display: none;
+}
+}
