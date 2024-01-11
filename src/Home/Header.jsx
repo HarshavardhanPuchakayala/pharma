@@ -1,11 +1,17 @@
 import React from 'react'
+import NavBar from "../Components/NavBar"
 import Services from '../Components/Services'
 import Button from "../Components/Button"
 import SpecialCare from "../Components/SpecialCare"
+import Feedback from "../Components/Feedback"
+import Medical from "../Components/Medical"
+import News from "../Components/News"
+import Footer from "../Components/Footer"
 import "./Header.css"
 export default function Header() {
   return (
     <>
+<NavBar/>
     <section className="HomeSectionHeader">
         <div className="HeaderContainer">
         <div className="HeaderContent">
@@ -76,14 +82,40 @@ added activity to beta test. Override the digital divide with information highwa
       <p className="SERVICESDESC">Medical Love</p>
       </div>
     </div>
-    {/* 
+    
     <section className="Schedule">
         <div className="ScheduleDiv">
             <h1>Schedule an imperson or virtual appointment today</h1>
             <Button className="AppointmentBtn add">Book an Appointment</Button>
         </div>
-    </section>*/}
+    </section>
     <SpecialCare/>
+    <div className='Border'>
+        <hr/>
+    </div>
+    <Feedback/>
+    <section className="WhyUs">
+        <div className="WhyUsDiv">
+        <p className="WhyusHeading">
+            WHY CHOOSING PHARMA
+        </p>
+        <p className="Whyusdesc">
+        Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate.
+        </p>
+        <ul className="Group">
+            <li>Blood clotting disorder</li>
+            <li>Blood clotting disorder</li>
+            <li>Blood clotting disorder</li>
+            <li>Blood clotting disorder</li>
+            <li>Blood clotting disorder</li>
+            <li>Blood clotting disorder</li>
+            <li>Blood clotting disorder</li>
+        </ul>
+        </div>
+    </section>
+    <Medical/>
+    <News/>
+    <Footer/>
     </>
   )
 }

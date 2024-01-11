@@ -1,0 +1,130 @@
+.MedicalSection{
+    background-color: var( --Primary01);
+    color: white;
+}
+.MedicalHeadingDiv{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    padding: 6rem 0;
+}
+.MedicalHeadingSection{
+    display: flex;
+    justify-content: space-between;
+}
+.MedicalName{
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.3rem;
+    border: 0.5px solid #2B78CA;
+    text-align: center;
+    width: 70%;
+}
+.MedicalHeading{
+    font-size: 1.8rem;
+    padding: 0.5rem 0 ;
+}
+.adds{
+    margin: auto 0;
+}
+.MedicalCardSection{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 0 5rem 0;
+}
+.MedicalCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #004A99;
+    padding: 2rem 0 1rem 0;
+    border-radius: 0.7rem;
+}
+.MedicalImg{
+    width: 80%;
+    box-shadow: 12px 17px 51px rgba(208, 201, 201, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 0.5rem;
+}
+.MedicalCardContent{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    gap: 0.3rem;
+}
+.MedicalCardName{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.MedicalCardProfession{
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+.socail{
+    padding-top: 0.8rem ;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+}
+.SocaialIcon{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.SocaialIcon:hover{
+    filter:drop-shadow(2px -5px 10px white) ;
+    backdrop-filter: blur(6px);
+}
+/*Year*/
+.MedicalYearsSection{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0 0 0 ;
+    border-top: 1px solid #2B78CA;
+}
+.MedicalYearsDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.MedicalHeading{
+    font-size: 3rem;
+}
+.MedicalPara{
+    font-size: 0.8rem;
+    letter-spacing: 0.4rem;
+    text-align: center;
+    border: 0.5px solid #2B78CA;
+    width: 80%;
+    line-height: 1.5rem;
+}
+@media screen and (min-width:0px) and (max-width:780px) {
+    .MedicalHeadingDiv{
+        width: 80%;
+        padding: 4rem 0;
+    }
+    .MedicalHeadingSection{
+        flex-direction: column;
+    }
+    .MedicalHeadingDiv{
+        padding: 4rem 0;
+    }
+    .adds{
+        display: flex;
+        margin:  auto 0;
+        justify-content: center;
+
+    }
+    .MedicalCardSection{
+        flex-direction: column;
+    }
+    /*Year*/
+    .MedicalYearsSection{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

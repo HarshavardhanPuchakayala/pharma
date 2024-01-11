@@ -81,6 +81,10 @@
     border: none;
     background-color: var(--Primary02);
 }
+.MenuBar{
+    display: none;
+    font-size: 2rem;
+}
 @media screen and (min-width:10px) and (max-width:800px) {
     .NavOneHeader{
         display: none;
@@ -100,6 +104,9 @@
     height: 7dvh;
 }
 .NavMenu{
+    display: none;
+    justify-content: center;
+    align-items: center;
         position: absolute;
         top: 11%;
         left: 0;
@@ -116,14 +123,21 @@
     }
     .NavItems li:last-child{
         display: flex;
-        margin: 0 auto;
         padding: 0.8rem 30%;
         font-size: 1rem;
         font-weight: 600;
         border: none;
         background-color: var(--Primary02);
     }
+    .show{
+        display: flex;
+        transition:5s all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
 .AppointmentBtn{
    display: none;
+}
+.MenuBar{
+    display: flex;
+    cursor: pointer;
 }
 }

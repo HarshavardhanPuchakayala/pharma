@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./NavBar.css"
 import { FiPhone,FiMail } from "react-icons/fi";
+import { IoMenu } from "react-icons/io5";
 export default function NavOne() {
+  const [Menu,setMenu]=useState(false)
+  const showMenu =()=>{
+  setMenu(!Menu)
+  }
   return (
     <>
     <header className='NavOneHeader'>
@@ -22,7 +27,7 @@ export default function NavOne() {
         <img src="/assets/Icon.png" alt="logo" />
         <h1>Pharma</h1>
       </label>
-      <div className="NavMenu">
+      <div className={`NavMenu ${Menu ? "show" : ""}`}>
           <ul className='NavItems'>
             <li>About Us</li>
             <li>Services</li>
@@ -33,6 +38,7 @@ export default function NavOne() {
           
       </div>
       <button className='AppointmentBtn'>Appointment</button>
+      <IoMenu className='MenuBar' onClick={showMenu} />
     </header>
     </>
   )

@@ -1,0 +1,72 @@
+.Feedbacksection{
+    width: 70%;
+    margin: 4rem auto;
+}
+.FeedbackSubHeading{
+    border: 1px solid rgb(199, 191, 191);
+    letter-spacing: 0.5rem;
+    text-align: center;
+    width: 20%;
+    margin: 0 auto;
+}
+.FeedBackHeading{
+    font-size: 2.5rem;
+    width: 50%;
+    text-align: center;
+    margin: 1rem auto;
+}
+.FeedbackGrid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+
+}
+.FeedbackCard{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: #F1F1F1;
+    gap: 1rem;
+}
+.FeedbackProfile{
+    display: flex;
+    padding-bottom: 1.5rem;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(193, 188, 188);
+}
+
+.Profile{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.Profile img{
+    border-radius: 100%;
+}
+.Feedbackpara{
+    line-height: 1.8rem;
+    font-size: 1.1rem;
+}
+.qoute{
+    width: 8%;
+    height: 40%;
+}
+.stars{
+    width: 40%;
+}
+@media screen and (min-width:0px) and (max-width:780px){
+    .Feedbacksection{
+        width: 80%;
+    }
+    .FeedbackSubHeading{
+        width: 80%;
+    }
+    .FeedBackHeading{
+        font-size: 2.4rem;
+        width: 100%;
+        margin: 1rem auto;
+    }
+    .FeedbackGrid{
+        grid-template-columns: 1fr;
+    }
+}

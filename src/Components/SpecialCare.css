@@ -4,12 +4,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem;
 }
 .SpecialCareDiv1{
     display: flex;
     flex-direction: column;
-    width: 100%;
     gap: 1rem;
 }
 .SpeacialCareName{
@@ -22,9 +20,11 @@
 .SpeacialCareHeading{
     font-size: 2.5rem;
     font-weight: 600;
+    
 }
 .SpecialCareSubHeading{
     font-size: 1.1rem;
+    width: 90%;
 }
 .SpecialCareBadges{
     display: flex;
@@ -34,4 +34,42 @@
 }
 .SpecialCareImage{
     width: 50%;
+}
+@media screen and (min-width:0) and (max-width:780px) {
+    .SpeacialCare{
+        width: 90%;
+        margin: 4rem auto;
+        gap: 2rem;
+        flex-direction: column-reverse;
+    }
+    .SpecialCareDiv1{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+    }
+    .SpeacialCareName{
+        width: 40%;
+        margin: 0 auto;
+        font-size: 0.9rem;
+    } 
+    .SpeacialCareHeading{
+        font-size: 2rem;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .SpecialCareSubHeading{
+        font-size: 1.1rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .SpecialCareBadges{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .SpecialCareImage{
+        width: 80%;
+        margin: 0 auto;
+    }
 }
