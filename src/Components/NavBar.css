@@ -51,6 +51,7 @@
     display: flex;
     align-items: center;
     gap: 2rem;
+    list-style-type: none;
 }
 .NavItems li{
     font-size: 1.1rem;

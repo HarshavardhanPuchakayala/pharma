@@ -59,6 +59,9 @@ footer{
     font-size: 1.6rem;
     font-weight: 800;
 }
+.FooterList{
+list-style-type: none;
+}
 .FooterList li{
     font-size: 1.1rem;
     padding-top: 0.5rem;

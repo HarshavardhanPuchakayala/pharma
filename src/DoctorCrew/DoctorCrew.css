@@ -1,0 +1,130 @@
+.CrewBanner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("/assets/CrewBanner.png");
+    font-size: 1.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    height: 40dvh;
+}
+.CrewCardSection{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 1rem 0 5rem 0;
+    width: 70%;
+    margin: 3rem auto;
+}
+.CrewCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F1F1F1;
+    padding: 2rem 0 1rem 0;
+    border-radius: 0.7rem;
+    gap: 1rem;
+}
+.CrewImg{
+    width: 80%;
+    box-shadow: 12px 17px 51px rgba(208, 201, 201, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 0.5rem;
+}
+.MedicalCardContent{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    gap: 0.3rem;
+}
+.CrewCardName{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.CrewCardProfession{
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 0.3rem 0;
+}
+.socail{
+    padding-top: 0.8rem ;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+}
+.SocaialIcon{
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.SocaialIcon:hover{
+    filter:drop-shadow(2px -5px 10px white) ;
+    backdrop-filter: blur(6px);
+}
+.Extra{
+    color:var(--Primary01);
+}
+.CrewCard:hover{
+    box-shadow: 0 2px 20px rgb(135, 130, 130);
+    cursor: pointer;
+}
+.CrewHeading2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    width: 100%;
+    margin-bottom: 4rem;
+    background-color: var(--Primary01);
+}
+.CrewHeading2 img{
+    display: flex;
+    width: 100%;
+}
+.CrewHeading2Content{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 60%;
+    gap: 1rem;
+    margin: auto 2rem auto auto;
+}
+.Crewtitle{
+    border: 0.5px solid black;
+    letter-spacing: 0.2rem;
+    width: 60%;
+    padding: 0.2rem;
+}
+.CrewHeading2Content h1{
+    font-size: 2.5rem;
+}
+@media screen and (min-width:10px) and (max-width:780px) {
+    .CrewBanner{
+        font-size: 1rem;
+        height: 30dvh;
+    }
+    .CrewCardSection{
+        grid-template-columns: 1fr;
+        width: 80%;
+        margin: 2rem auto;
+        gap: 2rem;
+    }
+    .CrewHeading2{
+        grid-template-columns: 1fr;
+    }
+    .Crewtitle{
+        text-align: center;
+        width: 100%;
+    }
+    .CrewHeading2Content{
+        width: 80%;
+        gap: 0.8rem;
+        padding: 2rem 0;
+        margin: 1rem auto;
+    }
+    .CrewHeading2Content h1{
+        font-size: 2rem;
+    }
+}

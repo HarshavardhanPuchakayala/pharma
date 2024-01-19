@@ -1,0 +1,70 @@
+.ServicesHeaderBanner{
+    background: url("/assets/ServicesBanner.png");
+    background-size: cover;
+    padding: 6rem 0;
+    text-align: center;
+    font-size: 2rem;
+}
+.Container{
+    width: 70%;
+    margin: 3rem auto;
+}
+.ServicesHeaderSection{
+    display: flex;
+    background: url("/assets/ServicesImg.png");
+    background-repeat: no-repeat;
+    padding: 4rem 0;
+    height: 100dvh;
+    width: 80%;
+    margin: 4rem auto;
+    background-position: 100%;
+}
+.ServicesDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    background-color: white;
+    margin: auto;
+    width: 30%;
+    height: 25dvh;
+    padding: 2rem 1rem;
+}
+.time{
+    font-size: 1.1rem;
+    letter-spacing: 0.2rem;
+    font-weight: 400;
+    padding: 0.2rem;
+    border: 0.5px solid rgb(170, 164, 164);
+    width: 15%;
+    text-align: center;
+}
+.ServicesDiv h1{
+    font-size: 3rem
+}
+.Timings{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: rgb(97, 96, 96);
+    line-height: 2rem;
+}
+
+@media screen and (min-width:10px) and (max-width:780px) {
+    .ServicesHeaderBanner{
+        font-size: 1.2rem;
+    }
+    .Container{
+        width: 70%;
+        margin: 2rem auto;
+    }
+    .ServicesHeaderSection{
+        width: 100%;
+        margin: 2rem auto;
+    }
+    .ServicesDiv{
+        width:80%;
+        height: 30dvh;
+        padding: 2rem 1rem;
+    }
+}
