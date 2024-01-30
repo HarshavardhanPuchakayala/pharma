@@ -1,0 +1,52 @@
+.ErrorBanner{
+    background: url("/assets/Error.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ErrorHeading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin: 2rem auto;
+    gap: 0.5rem;
+}
+.ErrorHeading h1{
+    font-size: 15rem;
+    color: var(--Primary01);
+}
+.ErrorHeading h4{
+    font-size: 2rem;
+    font-weight: 800;
+}
+.ErrorHeading p{
+    font-size: 1rem;
+    font-weight: 400;
+    width: 60%;
+    text-align: center;
+}
+.HomeBtn{
+    padding: 0.9rem;
+    background-color: #0FE3AF;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 2rem 0;
+}
+
+@media screen and (min-width:10px) and (max-width:780px) {
+    .ErrorHeading{
+        width: 80%;
+    }
+    .ErrorHeading h1{
+        font-size: 8rem;
+    }
+    .ErrorHeading p{
+        width: 90%;
+    }
+}

@@ -1,0 +1,76 @@
+.FAQ{
+    width: 80%;
+    margin: 3rem auto;
+}
+.FAQtitle{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    align-items: center;
+    padding: 2rem 0;
+}
+.FAQtitle h5{
+    border: 0.8px solid rgb(171, 163, 163);
+    width: 5%;
+    font-size: 1rem;
+    padding: 0.2rem;
+}
+.FAQtitle h1{
+    font-size: 2.5rem;
+}
+.FAQGrid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+.FAQCard{
+    gap: 1rem;
+    border: 1px solid #CECECE;
+    padding: 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+.FAQCardTitle{
+    display: flex;
+    justify-content: space-between;
+}
+.FAQName{
+    font-size: 1.4rem;
+}
+.FAQBTN{
+    border: none;
+    background: transparent;
+}
+.FAQBTNICON{
+    font-size: 1rem;
+    color: var(--Primary01);
+}
+.FAQdesc{
+    display: none;
+    padding-top: 1rem;
+    width: 90%;
+    line-height: 1.5rem;
+}
+.display{
+    display: flex;
+}
+@media screen and (min-width:10px) and (max-width:780px) {
+    .FAQ{
+        width: 90%;
+        margin: 2rem auto;
+    }
+    .FAQtitle h5{
+        width: 20%;
+    }
+    .FAQtitle h1{
+        font-size: 2rem;
+    }
+    .FAQGrid{
+        grid-template-columns: 1fr;
+    }
+    .FAQName{
+        font-size: 1.2rem;
+    }
+
+}
