@@ -1,17 +1,15 @@
 import React from 'react'
-import NavBar from "../Components/NavBar"
+import {Link} from 'react-router-dom'
 import Services from '../Components/Services'
 import Button from "../Components/Button"
 import SpecialCare from "../Components/SpecialCare"
 import Feedback from "../Components/Feedback"
 import Medical from "../Components/Medical"
 import News from "../Components/News"
-import Footer from "../Components/Footer"
 import "./Header.css"
 export default function Header() {
   return (
     <>
-<NavBar/>
     <section className="HomeSectionHeader">
         <div className="HeaderContainer">
         <div className="HeaderContent">
@@ -56,7 +54,9 @@ added activity to beta test. Override the digital divide with information highwa
                     <h2>24/7 Hours Medical Services</h2>
                 </div>
             </div>
+            <Link to="/About">
             <Button className="BTN MoreAboutUsBtn">More About Us</Button>
+            </Link>
         </div>
     </section>
     
@@ -86,7 +86,9 @@ added activity to beta test. Override the digital divide with information highwa
     <section className="Schedule">
         <div className="ScheduleDiv">
             <h1>Schedule an imperson or virtual appointment today</h1>
+            <Link to="/Contact">
             <Button className="AppointmentBtn add">Book an Appointment</Button>
+            </Link>
         </div>
     </section>
     <SpecialCare/>
@@ -115,7 +117,6 @@ added activity to beta test. Override the digital divide with information highwa
     </section>
     <Medical/>
     <News/>
-    <Footer/>
     </>
   )
 }

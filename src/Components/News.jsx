@@ -1,5 +1,6 @@
 import React from 'react'
 import "./News.css"
+import {Link} from 'react-router-dom'
 import Button from './Button'
 export default function News() {
     const NewsData=[{img:"/assets/News1.png" ,date:"16 AUGUST 2023",name:"Open letter to the residents of Ellsworth, Maine"},
@@ -18,7 +19,9 @@ export default function News() {
                     Latest Healthcare Articles
                 </h1>
             </div>
+            <Link to="/BLOG">
             <Button className="AppointmentBtn WhiteBtn">Read All News</Button>
+            </Link>
         </div>
         <div className="NEWSGrid">
             {NewsData.map((item,index)=>(

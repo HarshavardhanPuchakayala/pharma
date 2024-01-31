@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import {Link} from 'react-router-dom'
 import "./NavBar.css"
 import { FiPhone,FiMail } from "react-icons/fi";
 import { IoMenu } from "react-icons/io5";
@@ -25,19 +26,41 @@ export default function NavOne() {
     <header className='NavTwoHeader'>
       <label htmlFor="logo">
         <img src="/assets/Icon.png" alt="logo" />
+        <Link to="/">
         <h1>Pharma</h1>
+        </Link>
       </label>
       <div className={`NavMenu ${Menu ? "show" : ""}`}>
           <ul className='NavItems'>
-            <li>About Us</li>
-            <li>Services</li>
-            <li>Pages</li>
-            <li>Contact Us</li>
-            <li>Appointment</li>
+            <li>
+              <Link to="/About">
+              About Us
+              </Link>
+              </li>
+            <li>
+            <Link to="/ServicesPage">
+              Services
+              </Link>
+              </li>
+            <li>
+            <Link to="/DoctorCrew">
+              Team
+              </Link>
+              </li>
+            <li>
+              <Link to="/Plans">
+              Plans
+              </Link></li>
+            <li>
+            <Link to="/Contact">
+              Appointment
+              </Link></li>
           </ul>
           
       </div>
+      <Link to="/Contact">
       <button className='AppointmentBtn'>Appointment</button>
+      </Link>
       <IoMenu className='MenuBar' onClick={showMenu} />
     </header>
     </>

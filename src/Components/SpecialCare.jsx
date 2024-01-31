@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from "../Components/Button"
+import {Link} from 'react-router-dom'
 import "./SpecialCare.css"
 export default function SpecialCare() {
   return (
@@ -25,7 +26,9 @@ Completely synergize resource taxing relationships via premier niche markets. Pr
             <img src="/assets/VerficationBadge.png" alt="" />
             Professional Experts
         </p>
+        <Link to="/">
         <Button className="BTN">Discover Now</Button>
+        </Link>
     </div>
 
         <img src="/assets/Image.png" className='SpecialCareImage'/>

@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import "./MoreAboutUs.css"
 import Button from "../Components/Button"
 export default function MoreAboutUS() {
@@ -25,7 +26,9 @@ added activity to beta test. Override the digital divide with information highwa
                     <h2>24/7 Hours Medical Services</h2>
                 </div>
             </div>
+            <Link to="/About">
             <Button className="BTN">More About Us</Button>
+            </Link>
         </div>
     </section>
   )

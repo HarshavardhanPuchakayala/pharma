@@ -44,8 +44,11 @@
     align-items: center;
 }
 .NavTwoHeader img{
-    width: 80%;
-    height: 10dvh;
+    width: 60%;
+    height: 7dvh;
+}
+.NavTwoHeader h1{
+   font-size: 1.5rem;
 }
 .NavItems{
     display: flex;

@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from './Button';
+import {Link} from 'react-router-dom'
 import { FaFacebook,FaInstagram  } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import "./Medical.css"
@@ -27,7 +28,9 @@ export default function Medical() {
                     The Professional Doctors
                 </h1>
             </div>
+            <Link to="/DoctorCrew">
             <Button className="AppointmentBtn adds">View All Doctors</Button>
+            </Link>
         </div>
         <div className="MedicalCardSection">
             {DoctorData.map((item,index)=>(

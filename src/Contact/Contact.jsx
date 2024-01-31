@@ -40,7 +40,7 @@ export default function Contact() {
         <p>support@doctorate.com Youmail@gamil.com</p>
     </div>
         </div>
-
+<div className="formsections">
         <form className="formsection">
             <div className="Inputtype">
             <label htmlFor="Full Name*">Full Name*</label>
@@ -63,6 +63,7 @@ export default function Contact() {
             <textarea name="Message" id="" placeholder='Type your message here...'></textarea>
           <button>Send Message</button>
         </form>
+        </div>
     </>
   )
 }

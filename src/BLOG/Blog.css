@@ -1,0 +1,13 @@
+.BlogBanner{
+    background: url("/assets/BlogBanner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.BlogBanner h1{
+    font-size: 3rem;
+    text-align: center;
+}
